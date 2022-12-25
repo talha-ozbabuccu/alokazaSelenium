@@ -5,6 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class T1_CydeoVerifications {
+
+    /*
+    IN THIS CLASS WE ARE SOLVING THE DAY2_Veifications
+
+    */
     public static void main(String[] args) {
 
         //TC    #1: Cydeo practice tool verifications
@@ -31,6 +36,16 @@ public class T1_CydeoVerifications {
 
         //4. Verify title:
         //Expected: Practice
+        String expectedTitle="Practice";
+        String actualTitle= driver.getTitle();
+
+        if (actualTitle.equals(expectedTitle)){
+            System.out.println("Title verification PASSED");
+        }else {
+            System.out.println("Title verification FAILED");
+        }
+
+        driver.close();
 
 
 
