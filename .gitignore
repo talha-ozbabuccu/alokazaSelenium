@@ -1,5 +1,6 @@
 /.idea
-/.target
+
 /seleniumprojectEU010.iml
 
 
+/target/
