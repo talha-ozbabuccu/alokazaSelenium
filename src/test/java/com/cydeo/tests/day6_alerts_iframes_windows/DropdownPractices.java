@@ -5,20 +5,26 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
 public class DropdownPractices {
 
+     public WebDriver driver;
+
+     @BeforeMethod
+     public void setupMethod(){
+         //2. Go to https://practice.cydeo.com/dropdown
+         driver= WebDriverFactory.getDriver("chrome");
+         driver.manage().window().maximize();
+         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+         driver.get("https://practice.cydeo.com/dropdown");
+     }
+
     @Test
     public void dropdown_task5() throws InterruptedException {
-        //  TC #5: Selecting state from State dropdown and verifing result 1. Open Chrome Browser
-        //2. Go to https://practice.cydeo.com/dropdown
-        WebDriver driver= WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://practice.cydeo.com/dropdown");
 
         Select stateDropdown= new Select(driver.findElement(By.xpath("//select[@id='state']")));
         //3.Select Illinois
