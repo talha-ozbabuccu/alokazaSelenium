@@ -1,7 +1,10 @@
 package com.cydeo.tests.day6_alerts_iframes_windows;
 
 import com.cydeo.utilities.WebDriverFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -21,8 +24,26 @@ public class T5_Windows_Practice {
 
     @Test
     public void multiple_window_test(){
+        //Storing main page's window handle as string is
+        //good practice for future re-usable purposes
+        String mainHandle = driver.getWindowHandle();
+        System.out.println("mainHandle = " + mainHandle);
 
+        //Assert : Title is "Windows"
+        String expectedTitle = "Windows";
+        String actualTitle = driver.getTitle();
 
+        Assert.assertEquals(actualTitle,expectedTitle);
+        System.out.println("Title before click: " + actualTitle);
+        //Click to: "Click Here" link
+        WebElement clickHereLink = driver.findElement(By.linkText("Click Here"));
+        clickHereLink.click();
+
+        actualTitle= driver.getTitle();
+        System.out.println("Title after click: " + actualTitle);
+
+        //Switch to new Window.
+        //Assert: Title is "New Window"
     }
 
 }
