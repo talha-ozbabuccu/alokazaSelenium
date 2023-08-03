@@ -35,5 +35,11 @@ In this class only general utility methods that are not related to some specific
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
     }
 
+    /*
+    This method accepts a String "expectedTitle" nad Asserts if it is true
+     */
+    public static void verifyTitle(WebDriver driver, String expectedTitle){
+        Assert.assertEquals(driver.getTitle(),expectedTitle);
+    }
 
 }
