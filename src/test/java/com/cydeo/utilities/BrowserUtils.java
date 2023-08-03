@@ -19,6 +19,13 @@ In this class only general utility methods that are not related to some specific
         }
     }
 
+    /*
+    This method accepts 3 arguments.
+    Arg1: webdriver
+    Arg2: expectedInURL: for verify if the URL contains given argument
+        - If condition matches, will break loop
+     Arg3: expectedInTitle to be compared against actualTitle
+     */
     public static void switchWindowAndVerify(WebDriver driver, String expectedInURL, String expectedInTitle){
 
         Set<String> allWindowHandles=driver.getWindowHandles();
