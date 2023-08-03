@@ -16,10 +16,13 @@ public class T3_CRM_LOGIN {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
+    //TC #3: Login scenario
     @Test
     public void crm_login_test(){
-        //1. Create new test and make setups
+
         //2. Go to : http://login1.nextbasecrm.com/
+        driver.get("http://login1.nextbasecrm.com/");
+
         //3. Enter valid username
         //4. Enter valid password
         //5. Click to `Log In` button
