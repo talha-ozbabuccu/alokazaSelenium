@@ -30,6 +30,7 @@ public class T1_WindowHandling {
 
         //Create a logic to switch to the tab where Etsy.com is open
         Set<String>allWindowHandles=driver.getWindowHandles();
+
         for (String each : allWindowHandles) {
             driver.switchTo().window(each);
             System.out.println("Current URL: "+driver.getCurrentUrl());
