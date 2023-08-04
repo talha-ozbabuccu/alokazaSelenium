@@ -24,6 +24,10 @@ public class T3_CRM_LOGIN {
         driver.get("http://login1.nextbasecrm.com/");
 
         //3. Enter valid username
+
+        //helpdesk1@cybertekschool.com UserUser
+        //Helpdesk2@cybertekschool.com UserUser
+
         //4. Enter valid password
         //5. Click to `Log In` button
         //6. Verify title is as expected:
