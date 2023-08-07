@@ -14,7 +14,6 @@ import java.util.concurrent.TimeUnit;
 public class T1_Webtable_Order_Verify {
 
     public WebDriver driver;
-
     @BeforeMethod
     public void setupMethod(){
         driver= WebDriverFactory.getDriver("chrome");
