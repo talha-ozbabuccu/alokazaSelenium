@@ -10,7 +10,7 @@ public class BrowserUtils {
 In this class only general utility methods that are not related to some specific page
  */
 
-    public void sleep(int second){
+    public static void sleep(int second){
         second *=1000;
         try{
             Thread.sleep(second);
