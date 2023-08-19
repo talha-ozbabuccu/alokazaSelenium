@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.opera.OperaDriver;
+
 
 /*
 //TASK: NEW METHOD CREATION
@@ -34,11 +34,9 @@ public class WebDriverFactory {
             return new EdgeDriver();
 
         }
-        else if (browserType.equalsIgnoreCase("opera")) {
-            WebDriverManager.operadriver().setup();
-            return new OperaDriver();
 
-        } else {
+
+         else {
             System.out.println("Given browser type does not exist/or is not currently supported");
             System.out.println("Driver=null");
             return null;
