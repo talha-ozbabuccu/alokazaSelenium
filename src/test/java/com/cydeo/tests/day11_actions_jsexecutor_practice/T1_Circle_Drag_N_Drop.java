@@ -34,7 +34,7 @@ public class T1_Circle_Drag_N_Drop {
         actions.clickAndHold(smallCircle)
         .pause(2000)
                 .moveToElement(bigCircle)
-                .pause(2000).release().perform();
+                .pause(3000).release().perform();
 
         //3. Assert:
         //-Text in big circle changed to: “You did great!”
