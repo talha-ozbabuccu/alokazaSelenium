@@ -23,6 +23,6 @@ public class LibraryLoginPage {
     public WebElement inputPassword;
 
     @FindBy(xpath = "//button[.='Sign in']")
-    public WebElement signInButton
+    public WebElement signInButton;
 
 }
