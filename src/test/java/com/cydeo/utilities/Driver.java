@@ -22,7 +22,7 @@ public class Driver {
     We make Webriver private, because we want to close access from outside the class.
     We make it static because we will use it in a static method.
      */
-    private static WebDriver driver; //Value is null byb default
+    private static WebDriver driver; //Value is null by default
     /*
     Create a re-usable utility method which will return same driver instance when we call it
      */
