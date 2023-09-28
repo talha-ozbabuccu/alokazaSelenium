@@ -20,7 +20,7 @@ public class WebDriverWaitPractices {
 
         //2. Wait until title is “Dynamic title”
         //creating the wait object to be able to create certain condition to wait
-        WebDriverWait wait= new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+        WebDriverWait wait= new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
 
         //use the "wait" object to create our expected condition
         wait.until(ExpectedConditions.titleIs("Dynamic title"));
