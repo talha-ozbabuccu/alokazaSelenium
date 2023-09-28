@@ -22,7 +22,8 @@ public class T1_DoubleClick {
         actions.doubleClick(doubleClickPage.textToDoubleClick).perform();
 
         //4. Assert: Text’s “style” attribute value contains “red”
-
+        System.out.println("doubleClickPage.textToDoubleClick.getAttribute(\"style\") = "
+                + doubleClickPage.textToDoubleClick.getAttribute("style"));
     }
 
 
