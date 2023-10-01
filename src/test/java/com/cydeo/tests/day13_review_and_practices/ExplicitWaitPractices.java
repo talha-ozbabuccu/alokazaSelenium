@@ -1,14 +1,17 @@
 package com.cydeo.tests.day13_review_and_practices;
 
+import com.cydeo.pages.DynamicControlsPage;
 import com.cydeo.utilities.Driver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class ExplicitWaitPractices {
 
+    DynamicControlsPage dynamicControlsPage;
     @BeforeMethod
     public void setupMethod(){
         Driver.getDriver().get("https://practice.cydeo.com/dynamic_controls");
+        dynamicControlsPage= new DynamicControlsPage();
     }
 
     @Test
