@@ -48,10 +48,15 @@ public class ExplicitWaitPractices {
 
     @Test
     public void enable_button_test(){
-        //1- Open a chrome browser
-        //2- Go to: https://practice.cydeo.com/dynamic_controls
         //3- Click to “Enable” button
+        //System.out.println("dynamicControlsPage.inputBox.isEnabled() = "+ dynamicControlsPage.inputBox.isEnabled());
+        dynamicControlsPage.enableButton.click();
+        System.out.println("dynamicControlsPage.inputBox.isEnabled() = "+ dynamicControlsPage.inputBox.isEnabled());
+
         //4- Wait until “loading bar disappears”
+        //Calling our ExplicitWait utility method to wait loadingBar to disappear
+        BrowserUtils.waitForInvisibilityOf(dynamicControlsPage.loadingBar);
+        System.out.println("dynamicControlsPage.inputBox.isEnabled() = "+ dynamicControlsPage.inputBox.isEnabled());
         //5- Verify:
         //a. Input box is enabled.
         //b. “It’s enabled!” message is displayed.
