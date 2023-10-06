@@ -16,11 +16,11 @@ public class T1_Alert_Practices {
     public WebDriver driver;
     @BeforeMethod
     public void setupMethod(){
-        //2. Go to https://practice.cydeo.com/dropdown
+        //2. Go to https://practice.alokaza.com/dropdown
         driver= WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://practice.cydeo.com/javascript_alerts");
+        driver.get("https://practice.alokaza.com/javascript_alerts");
     }
 
     @Test

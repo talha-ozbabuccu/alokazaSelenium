@@ -15,7 +15,7 @@ public class T1_Registration_Form {
         //TC#1: Registration form confirmation
         //Note: Use JavaFaker OR read from configuration.properties file when possible.
         //1. Open browser
-        //2. Go to website: https://practice.cydeo.com/registration_form
+        //2. Go to website: https://practice.alokaza.com/registration_form
         //Driver.getDriver() ----> driver.get(url).
         Driver.getDriver().get(ConfigurationReader.getProperty("registration.form.url"));
 

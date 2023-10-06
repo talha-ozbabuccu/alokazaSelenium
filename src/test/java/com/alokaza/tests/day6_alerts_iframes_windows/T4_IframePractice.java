@@ -15,11 +15,11 @@ public class T4_IframePractice {
     public WebDriver driver;
     @BeforeMethod
     public void setupMethod(){
-        //2. Go to https://practice.cydeo.com/dropdown
+        //2. Go to https://practice.alokaza.com/dropdown
         driver= WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://practice.cydeo.com/iframe");
+        driver.get("https://practice.alokaza.com/iframe");
     }
     @Test
     public void iframe_test(){

@@ -19,7 +19,7 @@ public class T4_SimpleDropdowns {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        driver.get("https://practice.cydeo.com//dropdown");
+        driver.get("https://practice.alokaza.com//dropdown");
 }
     @Test
     public void simpleDropdownTest(){

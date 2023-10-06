@@ -16,8 +16,8 @@ public class T2_LinkTextPractice {
         WebDriver driver= new ChromeDriver();
         driver.manage().window().maximize();
 
-        //2. Go to https://paractice.cydeo.com
-        driver.get("https://practice.cydeo.com");
+        //2. Go to https://paractice.alokaza.com
+        driver.get("https://practice.alokaza.com");
 
         //3- Click to A/B Testing from top of the list.
         //Thread.sleep(2000); //for slowing down computer to find right

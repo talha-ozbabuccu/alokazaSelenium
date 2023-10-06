@@ -12,8 +12,8 @@ public class T6_JavascriptExecutor {
 
         //TC #6: Scroll using JavascriptExecutor
         //1- Open a chrome browser
-        //2- Go to: https://practice.cydeo.com/infinite_scroll
-        Driver.getDriver().get("https://practice.cydeo.com/infinite_scroll");
+        //2- Go to: https://practice.alokaza.com/infinite_scroll
+        Driver.getDriver().get("https://practice.alokaza.com/infinite_scroll");
 
         //((JavascriptExecutor)Driver.getDriver()).executeScript("");
 

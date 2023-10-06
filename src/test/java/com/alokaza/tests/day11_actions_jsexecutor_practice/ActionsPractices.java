@@ -14,18 +14,18 @@ public class ActionsPractices {
 
         //TC #4: Scrool Practice
         //1. Open a edge browser
-        //2. Go to: https://practice.cydeo.com/
-        Driver.getDriver().get("https://practice.cydeo.com/");
+        //2. Go to: https://practice.alokaza.com/
+        Driver.getDriver().get("https://practice.alokaza.com/");
 
-        //3. Scroll down to "Powered by CYDEO"
+        //3. Scroll down to "Powered by ALOKAZA"
         //Create object of  Actions  and pass our "driver" instance
         Actions actions= new Actions(Driver.getDriver());
 
-        //Locating cydeo link to be able to pass in the actions method
-        WebElement cydeoLink = Driver.getDriver().findElement(By.linkText("CYDEO"));
+        //Locating alokaza link to be able to pass in the actions method
+        WebElement alokazaLink = Driver.getDriver().findElement(By.linkText("ALOKAZA"));
 
         //4- Scroll using actions class "moveTo(element)" method
-        actions.moveToElement(cydeoLink).perform();
+        actions.moveToElement(alokazaLink).perform();
 
         // Scroll back up to "Home" link using PageUp button
         actions.sendKeys(Keys.PAGE_UP).perform();
@@ -36,7 +36,7 @@ public class ActionsPractices {
 
     @Test
     public void test2(){
-        Driver.getDriver().get("https://practice.cydeo.com/");
+        Driver.getDriver().get("https://practice.alokaza.com/");
     }
 
 }

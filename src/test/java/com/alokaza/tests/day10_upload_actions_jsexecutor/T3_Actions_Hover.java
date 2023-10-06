@@ -13,8 +13,8 @@ public class T3_Actions_Hover {
     @Test
     public void hovering_test(){
         //TC #3: Hover Test
-        //1. Go to https://practice.cydeo.com/hovers
-        Driver.getDriver().get("https://practice.cydeo.com/hovers");
+        //1. Go to https://practice.alokaza.com/hovers
+        Driver.getDriver().get("https://practice.alokaza.com/hovers");
 
         //Locate all images under here:
         WebElement img1= Driver.getDriver().findElement(By.xpath("(//img)[1]"));

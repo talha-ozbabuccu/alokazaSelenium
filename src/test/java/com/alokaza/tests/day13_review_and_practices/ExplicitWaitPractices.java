@@ -13,7 +13,7 @@ public class ExplicitWaitPractices {
     DynamicControlsPage dynamicControlsPage;
     @BeforeMethod
     public void setupMethod(){
-        Driver.getDriver().get("https://practice.cydeo.com/dynamic_controls");
+        Driver.getDriver().get("https://practice.alokaza.com/dynamic_controls");
         dynamicControlsPage= new DynamicControlsPage();
     }
 

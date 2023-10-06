@@ -12,8 +12,8 @@ public class T2_Upload_Practice {
     @Test
     public void upload_test(){
         //TC #2 Upload Test
-        //1. Go to https://practice.cydeo.com/upload
-        Driver.getDriver().get("https://practice.cydeo.com/upload");
+        //1. Go to https://practice.alokaza.com/upload
+        Driver.getDriver().get("https://practice.alokaza.com/upload");
 
         //2. Find some small file from your computer, and get the path of it.
         String path= "C:\\Users\\Ozbabuccu\\Desktop\\t1.jpg";

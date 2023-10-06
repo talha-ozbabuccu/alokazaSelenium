@@ -15,8 +15,8 @@ public class WebDriverWaitPractices {
     @Test
     public void dynamic_load_7_test(){
 
-        //1. Go to https://practice.cydeo.com/dynamic_loading/7
-        Driver.getDriver().get("https://practice.cydeo.com/dynamic_loading/7");
+        //1. Go to https://practice.alokaza.com/dynamic_loading/7
+        Driver.getDriver().get("https://practice.alokaza.com/dynamic_loading/7");
 
         //2. Wait until title is “Dynamic title”
         //creating the wait object to be able to create certain condition to wait
@@ -39,8 +39,8 @@ public class WebDriverWaitPractices {
     @Test
     public void dynamic_load_1_test (){
         //TC#5 : Dynamically Loaded Page Elements 1
-        //1. Go to https://practice.cydeo.com/dynamic_loading/1
-        Driver.getDriver().get("https://practice.cydeo.com/dynamic_loading/1");
+        //1. Go to https://practice.alokaza.com/dynamic_loading/1
+        Driver.getDriver().get("https://practice.alokaza.com/dynamic_loading/1");
         DynamicLoad1Page dynamicLoad1Page= new DynamicLoad1Page();
         WebDriverWait wait= new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
         //2. Click to start

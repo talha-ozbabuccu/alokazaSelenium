@@ -19,7 +19,7 @@ public class T1_Webtable_Order_Verify {
         driver= WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://practice.cydeo.com/web-tables");
+        driver.get("https://practice.alokaza.com/web-tables");
     }
     @Test
     public void order_name_verify_test(){
